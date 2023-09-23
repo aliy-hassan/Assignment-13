@@ -42,9 +42,9 @@ async function Courses() {
 
         <div className="row rowC">
           {
-            courses.map((course)=>{
+            courses.map((course, i)=>{
               return (
-              <TextCard title={course.title} desc={course.description} />
+                  <TextCard key={i} title={course.title} desc={course.description} />
               )
             })
           }
@@ -59,10 +59,10 @@ async function Courses() {
 
         <div className="row rowC">
           {
-            bestCourses.map((course)=>{
+            bestCourses.map((course, i)=>{
               const imgRef = course.photo.asset._ref;
               return (
-                <ImageCard source={urlFor(imgRef).url()} title={course.title} desc={course.description} />
+                <ImageCard key={i} source={urlFor(imgRef).url()} title={course.title} desc={course.description} />
               )
             })
           }

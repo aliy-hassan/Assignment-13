@@ -14,7 +14,7 @@ export default function Navbar() {
          
             <div className="nav-links" id="navLinks">
                 
-                <i className="fa fa-times" onclick="hideMenu()"></i>
+                <i className="fa fa-times" ></i>
                 <ul>
                     <li><Link href="/">{home}</Link></li>
                     <li><Link href="/courses">Course</Link></li>
@@ -23,7 +23,7 @@ export default function Navbar() {
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </div>
-            <i className="fa fa-bars" onclick="showMenu()"></i>
+            <i className="fa fa-bars"></i>
 
         </nav>
     )
